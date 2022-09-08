@@ -10,10 +10,15 @@ public class GameManager : MonoBehaviour
     [SerializeField] PlayerMove playerMove;
     [Header("UI")]
     [SerializeField] GameObject finishPanel;
+
+
+    [Header("Laser Touched")]
+    public static int touchingLaser=0;
     private void Start()
     {
         SlowArea.TimeSlow += SlowArea_TimeSlow;
         FinishLine.Finished += FinishLine_Finished;
+        touchingLaser = 0;
     }
 
     private void FinishLine_Finished()
@@ -21,17 +26,20 @@ public class GameManager : MonoBehaviour
         finishPanel.SetActive(true);
     }
 
-    private void SlowArea_TimeSlow(bool obj)
+    private void SlowArea_TimeSlow(bool slow, bool player)
     {
-        if (obj)
+        if (slow)
         {
-            OpenPhysicsBody(obj);
             SlowTime();
         }
-        else
+        else 
         {
-            OpenPhysicsBody(obj);
             NormalTime();
+            touchingLaser = 0;
+        }
+        if (player)
+        {
+            OpenPhysicsBody(slow);
         }
     }
 

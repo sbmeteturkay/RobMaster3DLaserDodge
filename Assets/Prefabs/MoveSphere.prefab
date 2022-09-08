@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4332376534146394377}
   m_Layer: 6
   m_Name: MoveSphere
-  m_TagString: Untagged
+  m_TagString: Handle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

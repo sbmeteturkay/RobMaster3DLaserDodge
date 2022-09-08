@@ -210,7 +210,6 @@ GameObject:
   m_Component:
   - component: {fileID: 51823974}
   - component: {fileID: 51823973}
-  - component: {fileID: 51823975}
   m_Layer: 2
   m_Name: SlowArea
   m_TagString: Untagged
@@ -227,7 +226,7 @@ BoxCollider:
   m_GameObject: {fileID: 51823972}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 5.91, y: 10.4, z: 5.91}
   m_Center: {x: 0, y: -14.29, z: 0}
@@ -246,18 +245,6 @@ Transform:
   m_Father: {fileID: 1727938693}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &51823975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 51823972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea44b9924c7bd7941bee15a73ae40c6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &92499011
 GameObject:
   m_ObjectHideFlags: 0
@@ -4225,7 +4212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59d450cffa3936748971d4b681be3484, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSpeed: 1
+  defaultSpeed: 6
   movementSpeed: 0
 --- !u!1 &1557586481 stripped
 GameObject:
@@ -4396,6 +4383,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 51823974}
     m_Modifications:
+    - target: {fileID: 610104788, guid: 7196b150b08214036be9a9608c501f97, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3021404927483111694, guid: 7196b150b08214036be9a9608c501f97, type: 3}
       propertyPath: m_Layer
       value: 2
@@ -4484,7 +4475,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1697645381}
   - component: {fileID: 1697645380}
-  - component: {fileID: 1697645379}
   m_Layer: 2
   m_Name: SlowArea (2)
   m_TagString: Untagged
@@ -4492,18 +4482,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1697645379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697645378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea44b9924c7bd7941bee15a73ae40c6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1697645380
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4513,7 +4491,7 @@ BoxCollider:
   m_GameObject: {fileID: 1697645378}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 5.91, y: 10.4, z: 5.91}
   m_Center: {x: 0, y: -14.29, z: 0}
@@ -4606,6 +4584,7 @@ GameObject:
   - component: {fileID: 1775745542}
   - component: {fileID: 1775745541}
   - component: {fileID: 1775745540}
+  - component: {fileID: 1775745544}
   m_Layer: 0
   m_Name: FinishLine
   m_TagString: Finish
@@ -4701,6 +4680,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775745538}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1775745544
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775745538}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1796735769 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -290750445479886849, guid: fc05fe4fd70394ee2bb216645832da7c, type: 3}
@@ -5576,7 +5571,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2091147573}
   - component: {fileID: 2091147572}
-  - component: {fileID: 2091147571}
   m_Layer: 2
   m_Name: SlowArea (1)
   m_TagString: Untagged
@@ -5584,18 +5578,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2091147571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2091147570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea44b9924c7bd7941bee15a73ae40c6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &2091147572
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5605,7 +5587,7 @@ BoxCollider:
   m_GameObject: {fileID: 2091147570}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 5.91, y: 10.4, z: 5.91}
   m_Center: {x: 0, y: -14.29, z: 0}
