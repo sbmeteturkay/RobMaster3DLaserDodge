@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3021404927483111695}
   - component: {fileID: 3021404927483111693}
   - component: {fileID: 3021404927483111692}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3021404928475741849}
   - component: {fileID: 3021404928475741846}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: LaserSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 3021404928622114366}
   - component: {fileID: 3021404928622114364}
   - component: {fileID: 3021404928622114367}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   - component: {fileID: 3021404929150697669}
   - component: {fileID: 3021404929150697668}
   - component: {fileID: 3021404929150697671}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Laser_wSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,7 +338,7 @@ GameObject:
   - component: {fileID: 3021404929239613996}
   - component: {fileID: 3021404929239613994}
   - component: {fileID: 3021404929239613997}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Laser_Emitter (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 3021404929421909602}
   - component: {fileID: 3021404929421909600}
   - component: {fileID: 3021404929421909603}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -502,7 +502,7 @@ GameObject:
   - component: {fileID: 610104786}
   - component: {fileID: 610104788}
   - component: {fileID: 957352687302738147}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: LaserParent
   m_TagString: Laser
   m_Icon: {fileID: 0}

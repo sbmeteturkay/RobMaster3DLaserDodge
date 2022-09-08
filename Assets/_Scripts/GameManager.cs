@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
     private void FinishLine_Finished()
     {
         finishPanel.SetActive(true);
+        SlowArea.TimeSlow -= SlowArea_TimeSlow;
+        FinishLine.Finished -= FinishLine_Finished;
     }
 
     private void SlowArea_TimeSlow(bool slow, bool player)

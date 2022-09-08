@@ -11,10 +11,11 @@ public class PlayerMove : MonoBehaviour
     private void Start()
     {
         movementSpeed = defaultSpeed;
+        shouldMove = false;
     }
-    void Update()
+    void FixedUpdate()
     {
         if(shouldMove)
-            transform.position += movementSpeed * Time.deltaTime * Vector3.down;
+            transform.position += movementSpeed * Time.fixedDeltaTime * Vector3.down;
     }
 }
