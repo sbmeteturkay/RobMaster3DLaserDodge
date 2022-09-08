@@ -8,7 +8,12 @@ public class BodyMove : MonoBehaviour
     // Start is called before the first frame update
     private Vector3 screenPoint;
     private Vector3 offset;
+    Transform startPoint;
 
+    private void Start()
+    {
+        startPoint = moveObject.transform;
+    }
     void OnMouseDown()
     {
         screenPoint = Camera.main.WorldToScreenPoint(moveObject.transform.position);
@@ -24,6 +29,11 @@ public class BodyMove : MonoBehaviour
         Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
         moveObject.transform.position = curPosition;
 
+    }
+    private void OnDisable()
+    {
+        moveObject.transform.position = startPoint.position;
+        moveObject.transform.rotation = startPoint.rotation;
     }
 
 }
